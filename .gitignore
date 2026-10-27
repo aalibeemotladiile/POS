@@ -1,0 +1,13 @@
+# Build output
+build/
+dist/
+Output/
+__pycache__/
+*.pyc
+
+# Local data — never commit sales data, backups or activation markers
+*.db
+*.db-wal
+*.db-shm
+.hdm_pos_activation
+passkey.hash

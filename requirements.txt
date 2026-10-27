@@ -1,0 +1,11 @@
+streamlit>=1.40
+# Pinned pair: pandas 2.3 + a mismatched numpy is the cause of the frozen-app
+# "init pandas._libs.tslibs.offsets" ImportError. numpy 1.26.4 + pandas 2.2.3 is
+# the known-good, ABI-stable combination for PyInstaller onedir builds.
+numpy==1.26.4
+pandas==2.2.3
+plotly>=5.20
+reportlab>=4.0
+pillow>=10.0
+# Excel (.xlsx) price-list import in Products & stock.
+openpyxl>=3.1.2

@@ -1,0 +1,8 @@
+# Windows-only extras for the native desktop window.
+# pywebview 5 is required: ALLOW_DOWNLOADS — the setting that lets the window
+# handle downloads — does not exist before 5.0.
+pywebview>=5.0
+pythonnet>=3.0.3
+# Windows has no built-in time-zone database; this gives the app proper
+# Africa/Gaborone local time (it falls back to UTC+2 without it).
+tzdata
